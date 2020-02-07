@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-<<<<<<< HEAD
 	<name>WebAppDemo</name>
-=======
-	<name>JavaEEWebContent</name>
->>>>>>> 80b1d50a4c72e58589891868793fcb8f03a16877
 	<comment></comment>
 	<projects>
 	</projects>
@@ -24,7 +20,6 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
-<<<<<<< HEAD
 		<buildCommand>
 			<name>org.eclipse.m2e.core.maven2Builder</name>
 			<arguments>
@@ -33,10 +28,6 @@
 	</buildSpec>
 	<natures>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
-=======
-	</buildSpec>
-	<natures>
->>>>>>> 80b1d50a4c72e58589891868793fcb8f03a16877
 		<nature>org.eclipse.jem.workbench.JavaEMFNature</nature>
 		<nature>org.eclipse.wst.common.modulecore.ModuleCoreNature</nature>
 		<nature>org.eclipse.wst.common.project.facet.core.nature</nature>
