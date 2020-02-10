@@ -1,10 +1,143 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<title>My Title</title>
 	</head>
 	
 	<body>
-		Hello World
+		<div>
+			Hello World
+		</div>		
+		
+		</br>
+		
+		<!-- Adding Number -->
+		<div>
+			<form action="addNumbers" method="POST"> <!-- if you dont set the method attribute, by default:get -->
+				<label>Enter 1st number</label>
+				</br>
+				<input type="text" name="num1">
+				</br>
+				<label>Enter 2nd number</label>
+				</br>
+				<input type="text" name="num2">
+				</br>
+				<input type="submit" value="Add 2 numbers">
+			</form>
+		</div>						
+		
+		</br>
+		
+		</br>
+		
+		<!-- Demonstrate RequestDispatcher -->		
+		<div>
+			<form action="dispatching1" method="POST">
+				<label>Why</label>
+				<input type="text" name="you">
+				<input type="submit" value="Dispatch1">
+			</form>
+		</div>
+		
+		</br>
+		
+		</br>
+		
+		<!-- Demonstrate SendRedirect(URL rewriting) -->		
+		<div>
+			<form action="redirect1">
+				<label>Why</label>
+				<input type="text" name="you">
+				<input type="submit" value="Redirect">
+			</form>
+		</div>
+		
+		</br>
+		
+		</br>
+		
+		<!-- Demonstrate Annotated Servlet -->		
+		<div>
+			<form action="annotation">
+				<label>Why</label>
+				<input type="text" name="you">
+				<input type="submit" value="Annotate">
+			</form>
+		</div>
+		
+		</br>
+		
+		</br>
+		
+		<!-- Demonstrate Session -->		
+		<div>
+			<form action="session1">
+				<label>Why</label>
+				<input type="text" name="you">
+				<input type="submit" value="Session">
+			</form>
+		</div>	
+		
+		</br>
+		
+		</br>
+		
+		<!-- Demonstrate Cookie -->		
+		<div>
+			<form action="cookie1">
+				<label>Why</label>
+				<input type="text" name="you">
+				<input type="submit" value="Cookie">
+			</form>
+		</div>		
+		
+		</br>
+		
+		</br>
+		
+		<!-- Demonstrate ServletConfig -->		
+		<div>
+			<form action="servletConfigDemo">
+				<label>Why</label>
+				<input type="text" name="you">
+				<input type="submit" value="ServletConfig">
+			</form>
+		</div>
+		
+		
+		</br>
+		
+		</br>
+		
+		<!-- Demonstrate ServletContext -->		
+		<div>
+			<form action="servletContextDemo">
+				<label>Why</label>
+				<input type="text" name="you">
+				<input type="submit" value="ServletContext">
+			</form>
+		</div>
+			
+			
+		</br>
+		
+		</br>	
+				
+		<!-- Adding Number with JSP-->
+		<div>
+			<form action="AddNumbers.jsp" method="POST"> <!-- if you dont set the method attribute, by default:get -->
+				<label>Enter 1st number</label>
+				</br>
+				<input type="text" name="num1">
+				</br>
+				<label>Enter 2nd number</label>
+				</br>
+				<input type="text" name="num2">
+				</br>
+				<input type="submit" value="Add 2 numbers using JSP">
+			</form>
+		</div>
 	</body>
+	
 </html>

@@ -1,0 +1,6 @@
+calling one servlet from another
+	Send Redirect(URL Rewriting)
+		This will be called with response sendRedirect(). 
+		Different request and response objects will be sent to the 2nd servlet(actually request is made by the clinet)
+		Client will know about this from the URL. URL will be changed
+		The 2nd servlet is called as part of different thread

@@ -1,0 +1,6 @@
+calling one servlet from another
+	RequestDispatcher
+		This will be called with request's getRequestDispatcher(). 
+		Same request and response objects will be sent to the 2nd servlet.
+		Client will not know anything about this from the URL. URL will stay the same
+		The 2nd servlet is called as part of the same thread

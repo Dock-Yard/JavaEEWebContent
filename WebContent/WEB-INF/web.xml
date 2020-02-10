@@ -1,12 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
-  <display-name>WebAppDemo</display-name>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>
+	
+	<servlet>
+		<servlet-name>addNumbers</servlet-name>
+		<servlet-class>com.servlet.addNumbers.AddNumbers</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addNumbers</servlet-name>
+		<url-pattern>/addNumbers</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>dispatching1</servlet-name>
+		<servlet-class>com.servlet.dispatch.Dispatching1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dispatching1</servlet-name>
+		<url-pattern>/dispatching1</url-pattern>
+	</servlet-mapping>
+	
+		
+	
+	<servlet>
+		<servlet-name>dispatching2</servlet-name>
+		<servlet-class>com.servlet.dispatch.Dispatching2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dispatching2</servlet-name>
+		<url-pattern>/dispatching2</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>redirect1</servlet-name>
+		<servlet-class>com.servlet.redirect.Redirect1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>redirect1</servlet-name>
+		<url-pattern>/redirect1</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>redirect2</servlet-name>
+		<servlet-class>com.servlet.redirect.Redirect2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>redirect2</servlet-name>
+		<url-pattern>/redirect2</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- This servlet demonstrates ServletConfig. They will be available to this specific servlet -->
+	<servlet>
+		<servlet-name>servletConfigDemo</servlet-name>
+		<servlet-class>com.servlet.servletConfig.ServletConfigDemo</servlet-class>
+		<init-param>
+			<param-name>name</param-name>
+			<param-value>crops</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servletConfigDemo</servlet-name>
+		<url-pattern>/servletConfigDemo</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- This servlet demonstrates ServletConfig. They will be available to all servlets -->
+	<context-param>
+		<param-name>name</param-name>
+		<param-value>death</param-value>
+	</context-param>
+	<context-param>
+		<param-name>age</param-name>
+		<param-value>time</param-value>
+	</context-param>
+	
 </web-app>
