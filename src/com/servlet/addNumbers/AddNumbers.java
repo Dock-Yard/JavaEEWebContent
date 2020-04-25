@@ -16,6 +16,7 @@ public class AddNumbers extends HttpServlet{
 	*/
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		System.out.println("Inside com.servlet.addNumbers.AddNumbers.service(HttpServletRequest, HttpServletResponse)");
+		System.out.println("Object Hash Code="+this.hashCode());
 		System.out.println(req.getMethod());//will print the method type(eg:GET, POST, etc)
 		System.out.println(req.getProtocol());//will print the protocol(eg:HTTP/1.1)
 		try {

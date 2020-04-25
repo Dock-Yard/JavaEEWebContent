@@ -18,7 +18,7 @@ public class Cookie1 extends HttpServlet{
 			System.out.println(req.getMethod());
 			System.out.println("Thread:"+Thread.currentThread().getId());
 			System.out.println("Req hashcode:"+req.hashCode());
-			System.out.println("Req hashcode:"+resp.hashCode());
+			System.out.println("Resp hashcode:"+resp.hashCode());
 			
 			Cookie cookie = new Cookie("cookieAttribute", req.getParameter("you"));
 			resp.addCookie(cookie);//this is set in response
