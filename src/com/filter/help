@@ -1,0 +1,18 @@
+Filters are used to filter requests. They are processed before the servlets. They are used generally for looging URLs, validating, etc.
+
+They are mapped in the same way as servlets using url mappings.
+ 
+For the same URL multiple filters/servet may be satisfied from the URL mapping in web.xml. 
+In that case all the filters are executed first and then the servlets. 
+The filters are execute in the same order they appear in the web.xml. This is called as the filter chain. 
+Following execution of all filters in the filter chain, the mapped servlet(if any) is executed.
+Note: The next filter in the filter chain or the next servlet will be called only if 'chain.doFilter(request, response);' is called from the doFilter method of the Filter. 
+  
+  
+  
+To create a filter you need to implement the interface: javax.servlet.Filter
+	Accordingly you need to implement the methods:
+		javax.servlet.Filter.init(FilterConfig)	<will be called by tomcat once when the filter is called for the first time. Filter is instantiated here>
+		javax.servlet.Filter.doFilter(ServletRequest, ServletResponse, FilterChain)	<will be called every time the filter is called.>
+		javax.servlet.Filter.destroy()	<will be called when the filter is taken out of service.>
+	To call the next filter in the filter chain or the servet that has to be followed by the filter, you need to call the doFilter method of FilterChain object inside doFilter method of the filter. If you dont call, the request processing will stop at that filter. 		
